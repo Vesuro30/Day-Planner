@@ -1,0 +1,25 @@
+section.holder{
+  min-height: 75px;
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.hour{
+  border: none;
+  border-right: 2px solid black;
+  width: 10%;
+  float: left;
+  background-color: greenyellow;
+}
+
+.task{
+  width: 83%;
+  float: left;
+  background-color: skyblue;
+}
+
+.save{
+  width: 7%;
+  float: left;
+  background-color: pink;
+}
