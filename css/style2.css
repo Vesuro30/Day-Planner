@@ -1,7 +1,12 @@
 section.holder{
+  /* border-top: 2px solid black; */
+}
+
+section.holder div{
   min-height: 75px;
+  display: inline-block;
+  padding: 10px;
   border-top: 2px solid black;
-  padding-top: 10px;
 }
 
 .hour{
@@ -9,17 +14,32 @@ section.holder{
   border-right: 2px solid black;
   width: 10%;
   float: left;
-  background-color: greenyellow;
 }
 
 .task{
   width: 83%;
   float: left;
-  background-color: skyblue;
+  background-color: #CCC;
 }
 
 .save{
   width: 7%;
-  float: left;
-  background-color: pink;
+  background-color: #39a0e5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url(../images/save-icon-40X33.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.past{
+  background-color: #CCC;
+}
+
+.present{
+  background-color: rgb(189, 35, 66);
+}
+
+.future{
+  background-color: rgb(29, 155, 29);
 }
