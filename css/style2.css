@@ -1,13 +1,16 @@
-section.holder{
-  /* border-top: 2px solid black; */
+/* Styles for the whole page */
+*{
+  box-sizing: border-box;
 }
 
+/* Styles for the rows */
 section.holder div{
   min-height: 75px;
   display: inline-block;
   padding: 10px;
   border-top: 2px solid black;
 }
+
 
 .hour{
   border: none;
@@ -30,6 +33,21 @@ section.holder div{
   background-image: url(../images/save-icon-40X33.png);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.save:hover{
+  cursor: pointer;
+  background-image: url(../images/noun-save-1000912-white.png);
+}
+
+textarea{
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  overflow: auto;
+  outline: none;
+  font-size: 110%;
 }
 
 .past{
