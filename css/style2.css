@@ -64,24 +64,32 @@ textarea{
 
 
 
-@media screen and(max-width: 768px)
+@media screen and (max-width: 768px)
 {
   .hour{
     width: 20%;
   }
 
   .save{
-    width: 20%;
+    width: 15%;
+  }
+
+  .task{
+    width: 65%
   }
 }
 
-@media screen and(max-width: 500px)
+@media screen and (max-width: 500px)
 {
   .hour{
     width: 20%;
   }
 
   .save{
-    width: 20%;
+    width: 15%;
+  }
+
+  .task{
+    width: 65%
   }
 }
