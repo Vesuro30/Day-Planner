@@ -81,6 +81,7 @@ populateTasks();
     }, 2500)
   });
 
+  
 
   //  This function takes the task fields as an array and converts the information to 
   //  a string to store in local storage
