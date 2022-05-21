@@ -9,9 +9,8 @@
 
 //  Initialize variables
 var $currentDayP = $("p#currentDay");
-var sectionDivTaskEl = $("section div.task")
-var userInputTasks = $("section div.task textarea");
 var saveButton  = $("section div.save");
+var saveConfirm = $("#saveConfirm");
 var allTasks = [];
 //  Set global variables for the colors used to indicate whether a 
 //  task is in the past, present or future
@@ -75,6 +74,11 @@ populateTasks();
   saveButton.click(function()
   {
     saveTasks();
+    saveConfirm.css("display", "block")
+    setTimeout(function()
+    {
+      saveConfirm.css("display", "none");
+    }, 2500)
   });
 
 

@@ -11,6 +11,51 @@ section.holder div{
   border-top: 2px solid black;
 }
 
+.jumbotron{
+  padding-bottom: 10px;
+}
+
+.instructions{
+  margin: 3px;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+#instructions1{
+  padding-top: 15px;
+}
+
+section#titles div{
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.container{
+  position:relative;
+}
+
+.hourTitle{
+  float: left;
+  width: 10%;
+  border: none;
+  font-size: 125%;
+  text-align: center;
+}
+
+.taskTitle{
+  float: left;
+  width: 83%;
+  border: none;
+  font-size: 125%;
+  text-align: center;
+}
+
+.saveTitle{
+  border: none;
+  width: 7%;
+  font-size: 125%;
+  text-align: center;
+}
 
 .hour{
   border: none;
@@ -60,6 +105,18 @@ textarea{
 
 .future{
   background-color: rgb(29, 155, 29);
+}
+
+#saveConfirm{
+  z-index: 999;
+  width: 80%;
+  margin: 25% 10%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-align: center;
 }
 
 
