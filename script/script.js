@@ -9,6 +9,8 @@
 
 //  Initialize variables
 var $currentDayP = $("p#currentDay");
+var sectionDivTaskEl = $("section div.task");
+var userInputTasks = $("section div.task textarea");
 var saveButton  = $("section div.save");
 var saveConfirm = $("#saveConfirm");
 var allTasks = [];
@@ -30,12 +32,12 @@ setInterval(function()
   }, 1000);
 
 
-
+console.log(allTasks)
 
 colorTimeslots();
 
 
-populateTasks();
+
 
 
 
@@ -59,7 +61,7 @@ populateTasks();
   //  to an array to populate the saved task fields.
   function populateTasks()
   {
-    var allTasks = JSON.parse(localStorage.getItem("storedUserTasks"));
+    allTasks = JSON.parse(localStorage.getItem("savedUserTasks"));
     console.log(allTasks);
 
     for (let i = 0; i < 9; i++) 
@@ -67,7 +69,7 @@ populateTasks();
       $("section#h" + Number(i + 9) + " textarea").val(allTasks[i]);
       
     }
-  }
+  };
 
 
   //  Add click handler to the save "buttons"
@@ -81,7 +83,6 @@ populateTasks();
     }, 2500)
   });
 
-  
 
   //  This function takes the task fields as an array and converts the information to 
   //  a string to store in local storage
@@ -91,9 +92,12 @@ populateTasks();
     for (let i = 0; i < 9; i++) 
     {
       allTasks[i] = $("section#h" + Number(i + 9) + " textarea").val();
+      console.log(allTasks);
  
     }
 
-    localStorage.setItem("storedUserTasks", JSON.stringify(allTasks));
+    localStorage.setItem("savedUserTasks", JSON.stringify(allTasks));
 
   }
+
+  populateTasks();
