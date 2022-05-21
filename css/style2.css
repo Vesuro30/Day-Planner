@@ -61,3 +61,27 @@ textarea{
 .future{
   background-color: rgb(29, 155, 29);
 }
+
+
+
+@media screen and(max-width: 768px)
+{
+  .hour{
+    width: 20%;
+  }
+
+  .save{
+    width: 20%;
+  }
+}
+
+@media screen and(max-width: 500px)
+{
+  .hour{
+    width: 20%;
+  }
+
+  .save{
+    width: 20%;
+  }
+}
