@@ -6,4 +6,4 @@ the tasks to local storage.
 Upon load or refresh the script will read local storage and install the
 users tasks in the designated hour block.
 
-To use the app you simply click on one of the task fields, enter your task information and click one of the save "buttons". All save buttons have the same functionality as all that needs to happen is the information is committed to local storage.
+To use the app you simply click on one of the task fields, enter your task information and click one of the save "buttons". All save buttons have the same functionality as all that needs to happen is the information is committed to local storage. A message is displayed when you click the save button to confirm that your information has been saved.
