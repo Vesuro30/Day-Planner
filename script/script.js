@@ -9,8 +9,8 @@
 
 //  Initialize variables
 var $currentDayP = $("p#currentDay");
-var sectionDivTaskEl = $("section div.task");
-var userInputTasks = $("section div.task textarea");
+// var sectionDivTaskEl = $("section div.task");
+// var userInputTasks = $("section div.task textarea");
 var saveButton  = $("section div.save");
 var saveConfirm = $("#saveConfirm");
 var allTasks = [];
@@ -31,8 +31,6 @@ setInterval(function()
   
   }, 1000);
 
-
-console.log(allTasks)
 
 colorTimeslots();
 
@@ -62,7 +60,6 @@ colorTimeslots();
   function populateTasks()
   {
     allTasks = JSON.parse(localStorage.getItem("savedUserTasks"));
-    console.log(allTasks);
 
     for (let i = 0; i < 9; i++) 
     {
@@ -92,7 +89,6 @@ colorTimeslots();
     for (let i = 0; i < 9; i++) 
     {
       allTasks[i] = $("section#h" + Number(i + 9) + " textarea").val();
-      console.log(allTasks);
  
     }
 
